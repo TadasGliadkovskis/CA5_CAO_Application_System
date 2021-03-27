@@ -1,3 +1,4 @@
+// Tadas Gliadkovskis D00229061
 package com.dkit.oopca5.client;
 
 /* The client package should contain all code and classes needed to run the Client
@@ -8,4 +9,14 @@ package com.dkit.oopca5.client;
 
 public class CAOClient
 {
+    public static void main(String[] args)
+    {
+        CAOClient CAOApplication = new CAOClient();
+        CAOApplication.start();
+    }
+
+    private void start()
+    {
+
+    }
 }

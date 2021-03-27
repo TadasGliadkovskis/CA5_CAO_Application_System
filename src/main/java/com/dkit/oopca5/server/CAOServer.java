@@ -1,3 +1,4 @@
+// Tadas Gliadkovskis D00229061
 package com.dkit.oopca5.server;
 
 /* The server package should contain all code to run the server. The server uses TCP sockets and thread per client.

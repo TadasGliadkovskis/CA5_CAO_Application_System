@@ -1,3 +1,4 @@
+// Tadas Gliadkovskis D00229061
 package com.dkit.oopca5.core;
 
 /*The core package should contain all of the classes
