@@ -1,7 +1,7 @@
 // Tadas Gliadkovskis D00229061 
 package com.dkit.oopca5.dao;
 import com.dkit.oopca5.dto.Student;
-import com.dkit.sd2a.oopca5.exceptions.DAOException;
+import com.dkit.oopca5.exceptions.DAOException;
 
 public interface IStudentDAOInterface
 {
