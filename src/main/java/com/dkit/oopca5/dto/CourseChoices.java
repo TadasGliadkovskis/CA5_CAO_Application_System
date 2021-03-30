@@ -7,9 +7,9 @@ import java.util.Objects;
 public class CourseChoices
 {
     private int caoNumber;
-    private List<Course> courseChoices;
+    private List<String> courseChoices;
 
-    public CourseChoices(int caoNumber, List<Course> courseChoices)
+    public CourseChoices(int caoNumber, List<String> courseChoices)
     {
         this.caoNumber = caoNumber;
         this.courseChoices = courseChoices;
@@ -26,7 +26,7 @@ public class CourseChoices
         return caoNumber;
     }
 
-    public List<Course> getCourseChoices()
+    public List<String> getCourseChoices()
     {
         return courseChoices;
     }

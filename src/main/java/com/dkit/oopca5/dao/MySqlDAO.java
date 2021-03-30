@@ -6,7 +6,7 @@ All of the database functionality should be here. You will need a DAO for each t
  */
 
 import com.dkit.oopca5.core.Colours;
-import com.dkit.sd2a.oopca5.exceptions.DAOException;
+import com.dkit.oopca5.exceptions.DAOException;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -35,7 +35,6 @@ public class MySqlDAO
             System.out.println(Colours.RED+"Class not found "+cnf.getMessage() + Colours.RESET);
             System.exit(2);
         }
-        System.out.println(Colours.GREEN+"Connected successfully"+Colours.RESET);
         return con;
     }
 }
