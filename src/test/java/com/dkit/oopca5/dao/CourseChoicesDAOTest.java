@@ -6,6 +6,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.*;
 
@@ -48,7 +50,7 @@ public class CourseChoicesDAOTest
         if we retrieve their choices from the database then their list size should be 3.
         */
 
-        int caoNumber = 12;
+        int caoNumber = 9842;
         List<String> startingList = new ArrayList<>();
         startingList.add("D247");
 
@@ -65,12 +67,14 @@ public class CourseChoicesDAOTest
 
             assertEquals(1, CourseChoicesDAO.getCurrentChoices(caoNumber).getCourseChoices().size());
 
+            TimeUnit.SECONDS.sleep(7); // Pause timer for demonstration purpose that code is working as intended
+
             assertTrue("Update Choices", CourseChoicesDAO.updateCurrentChoices(updatedChoices));
 
             assertEquals("Update Choices Size", 3,
                     CourseChoicesDAO.getCurrentChoices(caoNumber).getCourseChoices().size());
 
-        } catch (DAOException dao)
+        } catch (DAOException | InterruptedException dao)
         {
             dao.printStackTrace();
         }

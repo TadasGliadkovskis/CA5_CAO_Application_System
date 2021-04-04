@@ -80,8 +80,6 @@ public class MySqlCourseChoiceDAO extends MySqlDAO implements ICourseChoiceDAOIn
             deleteStatement.execute();
             for (String courseID : studentChoices.getCourseChoices())
             {
-                System.out.println("Course ID = " + courseID);
-                System.out.println("Course choice availabe = " + courseDAO.isCourseAvailable(courseID));
                 if (courseDAO.isCourseAvailable(courseID))
                 {
                     query = "insert into student_courses values (?,?);";

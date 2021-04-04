@@ -7,6 +7,8 @@ package com.dkit.oopca5.client;
 /* The CAOClient offers students a menu and sends messages to the server using TCP Sockets
  */
 
+import java.util.Scanner;
+
 public class CAOClient
 {
     public static void main(String[] args)
@@ -17,6 +19,5 @@ public class CAOClient
 
     private void start()
     {
-
     }
 }
