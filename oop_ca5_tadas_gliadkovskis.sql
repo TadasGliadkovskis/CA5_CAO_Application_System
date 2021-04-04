@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2021 at 12:17 PM
+-- Generation Time: Apr 04, 2021 at 01:29 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -71,7 +71,8 @@ INSERT INTO `student` (`cao_number`, `date_of_birth`, `password`) VALUES
 (10000002, '2000-07-12', 'Password2'),
 (10000003, '2001-04-17', 'Password3'),
 (10000004, '2000-08-25', 'Password4'),
-(10000005, '1999-10-27', 'Password5');
+(10000005, '1999-10-27', 'Password5'),
+(20034067, 'example', 'example');
 
 -- --------------------------------------------------------
 
@@ -93,7 +94,11 @@ INSERT INTO `student_courses` (`cao_number`, `course_id`) VALUES
 (10000003, 'MU567'),
 (10000004, 'D908'),
 (10000005, 'DK246'),
-(10000001, 'D908');
+(10000001, 'D908'),
+(10000001, 'D247'),
+(9842, 'DK246'),
+(9842, 'DK821'),
+(9842, 'MU345');
 
 --
 -- Indexes for dumped tables
